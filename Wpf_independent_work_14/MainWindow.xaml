@@ -41,7 +41,7 @@
         </DataTemplate>
     </Window.Resources>
     <StackPanel>
-        <TextBlock Text="Перечень товаров:" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="prodTitle" Text="Перечень товаров:" HorizontalAlignment="Center"/>
         <ListBox x:Name="lstBox" ItemTemplate="{StaticResource myTemplate}" HorizontalAlignment="Center"/>
     </StackPanel>
 </Window>
