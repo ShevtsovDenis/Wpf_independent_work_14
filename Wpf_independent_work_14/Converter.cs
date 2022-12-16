@@ -13,7 +13,7 @@ namespace Wpf_independent_work_14
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if ((ProductCategories)value== ProductCategories.Food)
+            if ((ProductCategories)value == ProductCategories.Food)
             {
                 return "Еда";
             }

@@ -12,7 +12,7 @@ namespace Wpf_independent_work_14
         Appliances
     }
 
-    class Product
+    public class Product
     {
         public string Name { get; set; }//название
         public decimal Price { get; set; }//цена

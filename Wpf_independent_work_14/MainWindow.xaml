@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="700" Width="500">
     <Window.Resources>
-        <local:Converter x:Name="converter"/>
+        <local:Converter x:Key="converter"/>
         <DataTemplate x:Key="myTemplate">
             <Border x:Name="border" BorderBrush="Aqua" BorderThickness="2" Margin="5" Padding="5">
                 <Grid>
@@ -40,8 +40,8 @@
             </DataTemplate.Triggers>
         </DataTemplate>
     </Window.Resources>
-    <StackPanel>
+    <StackPanel Width="450">
         <TextBlock x:Name="prodTitle" Text="Перечень товаров:" HorizontalAlignment="Center"/>
-        <ListBox x:Name="lstBox" ItemTemplate="{StaticResource myTemplate}" HorizontalAlignment="Center"/>
+        <ListBox x:Name="lstBox" ItemTemplate="{StaticResource myTemplate}" HorizontalContentAlignment="Stretch"/>
     </StackPanel>
 </Window>
